@@ -77,23 +77,23 @@
     .email_input {
       display: flex;
       flex-direction: row;
-      max-width: 45rem;
+      max-width: 40rem;
       width: 100%;
-      padding: 1rem 0;
+      padding: 2rem 0;
       gap: 1rem;
     }
 
     .email_input input {
-      flex: 1;
       outline: 0;
       border: 1px solid var(--pale_blue);
       border-radius: 3rem;
       height: 3rem;
       padding: 0 2rem;
       font-family: 'Libre Franklin', sans-serif;
-      font-size: 18px;
+      font-size: 16px;
       font-weight: 300;
       color: var(--very_dark_blue);
+      width: 70%;
     }
 
     .email_input input::placeholder {
@@ -108,12 +108,14 @@
       font-weight: 600;
       color: var(--pale_blue);
       background-color: var(--blue);
-      padding: 1rem 3rem;
       border-radius: 3rem;
+      width: 30%;
     }
 
     .illustration {
-      width: 10rem;
+      max-width: 35rem;
+      width: 100%;
+      margin: 3rem 0;
     }
 
     .attribution {
@@ -143,11 +145,11 @@
     <h1>We are launching <strong>soon!</strong></h1>
 
     <p>Subscribe and get notified</p>
+  </div>
 
-    <div class="email_input">
-      <input type="email" name="email" id="email" placeholder="Your email address..." autocomplete="off">
-      <button>Notify Me</button>
-    </div>
+  <div class="email_input">
+    <input type="email" name="email" id="email" placeholder="Your email address..." autocomplete="off">
+    <button>Notify Me</button>
   </div>
 
   <img class="illustration" src="images/illustration-dashboard.png" alt="illustration-dashboard.png">
