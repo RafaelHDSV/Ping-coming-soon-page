@@ -1,34 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Rafael Henrique de Sousa Vieira">
+  <meta name="keywords"
+    content="programação, html, css, javascript, frontend mentor, Ping coming soon page, Rafael Henrique de Sousa Vieira, Frontend, Front, end">
+  <meta name="robots" content="index, follow">
+  <meta name="description"
+    content="This challenge is great for beginners and offers a chance to practice basic client-side form validation.">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
   <title>Frontend Mentor | Ping coming soon page</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    :root {
+      --blue: hsl(223, 87%, 63%);
+      --pale_blue: hsl(223, 100%, 88%);
+      --light_red: hsl(354, 100%, 66%);
+      --gray: hsl(0, 0%, 59%);
+      --very_dark_blue: hsl(209, 33%, 12%);
+    }
+
+    @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+    /* font-family: 'Libre Franklin', sans-serif; */
+
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      text-decoration: none;
+      font-size: 20px;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-width: 100%;
+      min-height: 100vh;
+    }
+
+    .logo {
+      margin: 3rem 0;
+    }
+
+    .attribution {
+      position: absolute;
+      bottom: 0;
+      padding: 1rem 0;
+      text-align: center;
+      gap: 2rem;
+    }
+
+    .attribution p {
+      font-size: 12px;
+      color: var(--very_dark_blue);
+    }
+
+    .attribution a {
+      font-size: 12px;
+      color: var(--blue);
+    }
   </style>
 </head>
+
 <body>
+  <img class="logo" src="images/logo.svg" alt="logo.svg">
 
-  We are launching soon!
+  <h1>We are launching <strong>soon!</strong></h1>
 
-  Subscribe and get notified
+  <p>Subscribe and get notified</p>
 
-  Notify Me
+  <div class="email_input">
+    <input type="email" name="email" id="email">
+    <button>Notify Me</button>
+  </div>
 
-  &copy; Copyright Ping. All rights reserved.
+  <div class="footer">
+    <div class="social">
 
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
+    </div>
+
+    <p>&copy; Copyright Ping. All rights reserved.</p>
+  </div>
+
+  <!-- 
+
+  
+
+   -->
+
+  <footer class="attribution">
+    <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.</p>
+    <p>Coded by <a href="https://github.com/RafaelHDSV" target="_blank">Rafael Henrique de Sousa Vieira</a>.</p>
   </footer>
 </body>
+
 </html>
