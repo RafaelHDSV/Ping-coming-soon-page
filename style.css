@@ -1,0 +1,212 @@
+:root {
+    --blue: hsl(223, 87%, 63%);
+    --pale_blue: hsl(223, 100%, 88%);
+    --light_red: hsl(354, 100%, 66%);
+    --gray: hsl(0, 0%, 59%);
+    --very_dark_blue: hsl(209, 33%, 12%);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+/* font-family: 'Libre Franklin', sans-serif; */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 100%;
+    min-height: 100vh;
+}
+
+.logo {
+    margin: 2.5rem 0;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+h1 {
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 48px;
+    font-weight: 300;
+    color: var(--gray);
+}
+
+h1 strong {
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--very_dark_blue);
+}
+
+.text p {
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    color: var(--very_dark_blue);
+}
+
+.email_input {
+    display: flex;
+    flex-direction: row;
+    max-width: 40rem;
+    width: 100%;
+    padding: 2rem 0;
+    gap: 1rem;
+}
+
+.email_input div {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    width: 70%;
+}
+
+.email_input input {
+    outline: 0;
+    border: 1px solid var(--pale_blue);
+    border-radius: 3rem;
+    height: 3rem;
+    padding: 0 2rem;
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--very_dark_blue);
+    width: 100%;
+}
+
+.email_input input::placeholder {
+    color: var(--pale_blue);
+}
+
+label {
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--light_red);
+    padding: 0 2rem;
+}
+
+button {
+    outline: 0;
+    border: none;
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--pale_blue);
+    background-color: var(--blue);
+    border-radius: 3rem;
+    width: 30%;
+    max-height: 3rem;
+    height: 100vh;
+    cursor: pointer;
+    transition: .5s all ease;
+}
+
+button:hover {
+    opacity: .7;
+}
+
+.hide {
+    display: none;
+    opacity: 0;
+}
+
+.illustration {
+    max-width: 35rem;
+    width: 100%;
+    margin: 3rem 0;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    color: var(--gray);
+}
+
+.social {
+    display: flex;
+    gap: 1rem;
+}
+
+.social_logo {
+    border-radius: 50%;
+    padding: .5rem;
+    width: 2.2rem;
+    cursor: pointer;
+    transition: .5s all ease;
+    border: 1px solid var(--pale_blue);
+}
+
+.social_logo:hover {
+    background-color: var(--blue);
+}
+
+svg path {
+    fill: var(--blue);
+}
+
+svg:hover path {
+    fill: var(--pale_blue);
+}
+
+.attribution {
+    display: block;
+    padding: 1rem 0;
+    text-align: center;
+    gap: 2rem;
+}
+
+.attribution p {
+    font-size: 12px;
+    color: var(--very_dark_blue);
+}
+
+.attribution a {
+    font-size: 12px;
+    color: var(--blue);
+}
+
+@media screen and (max-width: 650px) {
+    body {
+        padding: 1rem;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    .email_input {
+        flex-direction: column;
+    }
+
+    .email_input div {
+        width: 100%;
+    }
+
+    label {
+        text-align: center;
+        font-size: 12px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
