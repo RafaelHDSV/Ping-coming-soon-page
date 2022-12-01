@@ -31,7 +31,6 @@
       margin: 0;
       box-sizing: border-box;
       text-decoration: none;
-      font-size: 20px;
     }
 
     body {
@@ -43,7 +42,40 @@
     }
 
     .logo {
-      margin: 3rem 0;
+      margin: 2.5rem 0;
+    }
+
+    .text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    h1 {
+      font-family: 'Libre Franklin', sans-serif;
+      font-size: 48px;
+      font-weight: 300;
+      color: var(--gray);
+    }
+
+    h1 strong {
+      font-family: 'Libre Franklin', sans-serif;
+      font-size: 48px;
+      font-weight: 700;
+      color: var(--very_dark_blue);
+    }
+
+    .text p {
+      font-family: 'Libre Franklin', sans-serif;
+      font-size: 18px;
+      font-weight: 300;
+      color: var(--very_dark_blue);
+    }
+
+    .illustration {
+      width: 10rem;
     }
 
     .attribution {
@@ -69,14 +101,18 @@
 <body>
   <img class="logo" src="images/logo.svg" alt="logo.svg">
 
-  <h1>We are launching <strong>soon!</strong></h1>
+  <div class="text">
+    <h1>We are launching <strong>soon!</strong></h1>
 
-  <p>Subscribe and get notified</p>
+    <p>Subscribe and get notified</p>
 
-  <div class="email_input">
-    <input type="email" name="email" id="email">
-    <button>Notify Me</button>
+    <div class="email_input">
+      <input type="email" name="email" id="email">
+      <button>Notify Me</button>
+    </div>
   </div>
+
+  <img class="illustration" src="images/illustration-dashboard.png" alt="illustration-dashboard.png">
 
   <div class="footer">
     <div class="social">
@@ -86,16 +122,10 @@
     <p>&copy; Copyright Ping. All rights reserved.</p>
   </div>
 
-  <!-- 
-
-  
-
-   -->
-
-  <footer class="attribution">
+  <!-- <footer class="attribution">
     <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.</p>
     <p>Coded by <a href="https://github.com/RafaelHDSV" target="_blank">Rafael Henrique de Sousa Vieira</a>.</p>
-  </footer>
+  </footer> -->
 </body>
 
 </html>
