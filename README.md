@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: URL SOLUTION HERE
-- Live Site URL: URL SITE HERE
+- Solution URL: https://www.frontendmentor.io/solutions/ping-coming-soon-page-html-css-javascript-SGVgPkws5Y
+- Live Site URL: https://ping-coming-soon-page-rafael.netlify.app
 
 ### Screenshot
 
