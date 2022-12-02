@@ -53,4 +53,4 @@ Users should be able to:
 - CSS
 - JAVASCRIPT
 
-[⬆ Back to the top](#frontend-mentor---ping-coming-soon-page)<br>
+[⬆ Back to the top](#frontend-mentor---ping-coming-soon-page-solution)<br>
